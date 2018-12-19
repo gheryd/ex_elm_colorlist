@@ -1,9 +1,10 @@
 # ex_elm_colorlist
 
-simple example with elm 
+simple example with elm and nodejs (expressjs)
 
-require: elm 0.19
+require: elm 0.19, nodejs
 
-start app:
-  - elm make src/color_list.elm --output=dist/main.js
-  - open dist/index.html with browser
+start app commands:
+  - \# elm make src/client/Main.elm --output=dist/main.js
+  - \# node src/server/index.js
+  - http://localhost:3000
