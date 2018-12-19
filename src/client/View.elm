@@ -47,7 +47,7 @@ menuItems = [
     ]
 
 loading : Html Msg
-loading  = div [class ""] [ span [] [text "loading..."] ]
+loading  = div [class "progress"] [div [class "indeterminate"] [] ]
 
 creatingError : String -> Html Msg
 creatingError error = div [class ""] [ span [] [text ("Error: "++error)] ]
