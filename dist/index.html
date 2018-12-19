@@ -10,7 +10,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="main.js"></script>
         <script>
-            Elm.Test.init({node: document.getElementById('app')})
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems, {});
+            });
+            Elm.Main.init({node: document.getElementById('app')})
         </script>
     </body>
 </html>
