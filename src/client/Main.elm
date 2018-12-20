@@ -46,8 +46,8 @@ init _ = ( initModel, loadColors )
 colorDecoder : Decoder Color
 colorDecoder = Json.Decode.map3 Color 
     (field "id" int) 
-    (field "name" string)
     (field "color" string)
+    (field "name" string)
 colorsDecoder: Decoder (List Color)
 colorsDecoder = Json.Decode.list colorDecoder
 
